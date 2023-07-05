@@ -16,6 +16,7 @@
 
 <script lang="ts" setup>
 import { computed, ref, watch } from "vue";
+import "./Present.css";
 
 const props = withDefaults(
   defineProps<{
@@ -107,41 +108,3 @@ const handleKeyDown = (e: KeyboardEvent) => {
   }
 };
 </script>
-<style scoped>
-.present {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  outline: none;
-}
-
-.present-item {
-  width: 100vw;
-  height: 100vh;
-}
-
-.current-present.shake {
-  animation: shake 0.5s infinite;
-}
-
-@keyframes shake {
-  0% {
-    transform: translate(0);
-  }
-  25% {
-    transform: translate(-5px, -5px) rotate(-5deg);
-  }
-  50% {
-    transform: translate(5px, 5px) rotate(5deg);
-  }
-  75% {
-    transform: translate(-5px, -5px) rotate(-5deg);
-  }
-  100% {
-    transform: translate(0);
-  }
-}
-</style>

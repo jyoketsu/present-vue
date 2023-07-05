@@ -24,7 +24,8 @@
 </template>
 <script lang="ts" setup>
 import { ref } from "vue";
-import Present from "./Present.vue";
+import Present from "../Present.vue";
+
 const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const page = ref(0);
 

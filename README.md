@@ -2,6 +2,9 @@
 
 `present-vue` is a Vue component that allows you to present a collection of child components in a vertical scrolling view. It provides an intuitive way to showcase content in a slideshow-like manner.
 
+## online-demo
+https://jyoketsu.github.io/present-vue/
+
 ## Installation
 
 ```bash
@@ -60,7 +63,9 @@ Use the left and right arrow keys on the keyboard for page navigation, and the u
 </template>
 <script lang="ts" setup>
 import { ref } from "vue";
-import Present from "./Present.vue";
+import present from "present-vue";
+import "present-vue/dist/style.css";
+
 const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const page = ref(0);
 

@@ -1,7 +1,7 @@
 {
   "name": "present-vue",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.5",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -14,7 +14,8 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "deploy-storybook": "gh-pages -d storybook-static"
   },
   "dependencies": {
     "vue": "^3.2.47"
@@ -28,6 +29,7 @@
     "@storybook/vue3": "^7.0.24",
     "@storybook/vue3-vite": "^7.0.24",
     "@vitejs/plugin-vue": "^4.2.3",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.0.24",
