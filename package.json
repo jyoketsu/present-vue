@@ -1,7 +1,7 @@
 {
   "name": "present-vue",
   "private": false,
-  "version": "0.0.5",
+  "version": "0.0.7",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -25,6 +25,7 @@
     "@storybook/addon-interactions": "^7.0.24",
     "@storybook/addon-links": "^7.0.24",
     "@storybook/blocks": "^7.0.24",
+    "@storybook/builder-vite": "^7.0.26",
     "@storybook/testing-library": "^0.0.14-next.2",
     "@storybook/vue3": "^7.0.24",
     "@storybook/vue3-vite": "^7.0.24",

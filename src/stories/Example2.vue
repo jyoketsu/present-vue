@@ -39,7 +39,7 @@ const handlePrevious = () => {
   page.value -= 1;
 };
 </script>
-<style>
+<style scoped>
 .example-item {
   font-size: 32px;
   width: 100%;

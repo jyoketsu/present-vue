@@ -3,6 +3,7 @@
 `present-vue` is a Vue component that allows you to present a collection of child components in a vertical scrolling view. It provides an intuitive way to showcase content in a slideshow-like manner.
 
 ## online-demo
+
 https://jyoketsu.github.io/present-vue/
 
 ## Installation
@@ -23,6 +24,9 @@ The `present-vue` component accepts the following props:
 
 - `currentPage`: starting from zero
 - `pageCount`: total number of child elements to be displayed
+- `processColor` optional,default:`"#bcddff"`
+- `highlightProcessColor` optional,default:`"#409eff"`
+- `hidePaginationButton` optional,default:`200`
 
 The `present-vue` component accepts the following events:
 
@@ -32,6 +36,7 @@ The `present-vue` component accepts the following events:
 Note: In the next or previous event, the user should place the current page in the "#current" slot.
 
 ## Usage
+
 Use the left and right arrow keys on the keyboard for page navigation, and the up and down arrow keys for scrolling.
 
 ```vue
