@@ -7,6 +7,17 @@ declare const _default: __VLS_WithTemplateSlots<import('./vue/dist/vue.esm-bundl
         type: import('./vue/dist/vue.esm-bundler.js').PropType<number>;
         required: true;
     };
+    processColor: {
+        type: import('./vue/dist/vue.esm-bundler.js').PropType<string>;
+        default: string;
+    };
+    highlightProcessColor: {
+        type: import('./vue/dist/vue.esm-bundler.js').PropType<string>;
+        default: string;
+    };
+    hidePaginationButton: {
+        type: import('./vue/dist/vue.esm-bundler.js').PropType<boolean>;
+    };
 }, {}, unknown, {}, {}, import('./vue/dist/vue.esm-bundler.js').ComponentOptionsMixin, import('./vue/dist/vue.esm-bundler.js').ComponentOptionsMixin, {
     next: (index: number) => void;
     previous: (index: number) => void;
@@ -19,10 +30,24 @@ declare const _default: __VLS_WithTemplateSlots<import('./vue/dist/vue.esm-bundl
         type: import('./vue/dist/vue.esm-bundler.js').PropType<number>;
         required: true;
     };
+    processColor: {
+        type: import('./vue/dist/vue.esm-bundler.js').PropType<string>;
+        default: string;
+    };
+    highlightProcessColor: {
+        type: import('./vue/dist/vue.esm-bundler.js').PropType<string>;
+        default: string;
+    };
+    hidePaginationButton: {
+        type: import('./vue/dist/vue.esm-bundler.js').PropType<boolean>;
+    };
 }>> & {
     onNext?: ((index: number) => any) | undefined;
     onPrevious?: ((index: number) => any) | undefined;
-}, {}, {}>, {
+}, {
+    processColor: string;
+    highlightProcessColor: string;
+}, {}>, {
     previous?(_: {}): any;
     current?(_: {}): any;
     next?(_: {}): any;
