@@ -18,6 +18,10 @@ declare const _default: __VLS_WithTemplateSlots<import('./vue/dist/vue.esm-bundl
     hidePaginationButton: {
         type: import('./vue/dist/vue.esm-bundler.js').PropType<boolean>;
     };
+    scrollStep: {
+        type: import('./vue/dist/vue.esm-bundler.js').PropType<number>;
+        default: number;
+    };
 }, {}, unknown, {}, {}, import('./vue/dist/vue.esm-bundler.js').ComponentOptionsMixin, import('./vue/dist/vue.esm-bundler.js').ComponentOptionsMixin, {
     next: (index: number) => void;
     previous: (index: number) => void;
@@ -41,12 +45,17 @@ declare const _default: __VLS_WithTemplateSlots<import('./vue/dist/vue.esm-bundl
     hidePaginationButton: {
         type: import('./vue/dist/vue.esm-bundler.js').PropType<boolean>;
     };
+    scrollStep: {
+        type: import('./vue/dist/vue.esm-bundler.js').PropType<number>;
+        default: number;
+    };
 }>> & {
     onNext?: ((index: number) => any) | undefined;
     onPrevious?: ((index: number) => any) | undefined;
 }, {
     processColor: string;
     highlightProcessColor: string;
+    scrollStep: number;
 }, {}>, {
     previous?(_: {}): any;
     current?(_: {}): any;
