@@ -212,7 +212,7 @@ const handleKeyDown = (e: KeyboardEvent) => {
       if (currentPresentRef.value) {
         const isAtBottom =
           currentPresentRef.value.scrollHeight -
-            currentPresentRef.value.scrollTop ===
+            currentPresentRef.value.scrollTop <=
           currentPresentRef.value.clientHeight;
 
         if (isAtBottom) {
